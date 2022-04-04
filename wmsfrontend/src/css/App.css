@@ -8,7 +8,7 @@
   font-size: xx-large;
   margin-top: 20px;
 }
-.nav li{
+.mylink{
   display: inline-flex;
   margin-right: 1pc;
 }
@@ -25,4 +25,32 @@
 .footer a{
   margin-right: 50px;
   color: aqua;
+}
+.loginForm{
+  margin: 20px auto 1px auto; /*top,right,button,left*/
+  /* border: #000 1px solid; */
+  width: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.loginForm .row input{
+  display: block;
+  margin: auto;
+  min-width: 20%;
+  text-align: center;
+  padding: 6px;
+  font-size: medium;
+}
+.loginForm .row label{
+  font-weight: 700;
+  font-size: xx-large;
+}
+.loginForm .row input[type='submit']{
+  font-size: xx-large;
+  margin: 10px auto;
+  font-weight: 400;
+  border-radius: 5px;
+  min-width: 21%;
+  background-color: aquamarine;
 }

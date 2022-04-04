@@ -1,12 +1,13 @@
 import logo from '../images/maxlogo.png';
+import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div>
             {/* <img className="logo" src={logo} alt="Max logo" /> */}
             <nav className='nav'>
-                <li><a href="">About US</a></li>
-                <li><a href="">Contact US</a></li>
-                <li><a href="">Log In</a></li>
+                <Link className='mylink' to='/'>Home</Link>| {" "}
+                <Link className='mylink' to={'/about'}>About Us</Link>| {" "}
+                <Link className='mylink' to={'/login'}>Log In</Link>
             </nav>
         </div>
     );
