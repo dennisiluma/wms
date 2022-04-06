@@ -4,7 +4,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './Component/App';
 import Login from './Component/Login'
 import About from './Component/About';
+import Dashboard from './Component/Dashboard';
 import reportWebVitals from './reportWebVitals';
+import AvailableOrders from './Component/AvailableOrders';
+import InProgressOrders from './Component/InProgressOrders';
+import FulfilledOrders from './Component/FulfilledOrders';
+import CreateWalkInCusOrder from './Component/CreateWalkInCusOrder';
+import CreateClientOrder from './Component/CreateClientOrder';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +20,15 @@ ReactDOM.render(
         <Route path='/' element={<App />}>
           <Route path='about' element={<About />} /> {/* Here, we are nexting About component*/}
         </Route>
-          <Route path='login' element={<Login />} />
+        <Route path='login' element={<Login />} />
+
+        <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='availableOrders' element={<AvailableOrders />} />
+          <Route path='inProgressOrders' element={<InProgressOrders />} />
+          <Route path='fulfilledOrders' element={<FulfilledOrders />} />
+          <Route path='createWalkInCusOrder' element={<CreateWalkInCusOrder />} />
+          <Route path='createClientOrder' element={<CreateClientOrder />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

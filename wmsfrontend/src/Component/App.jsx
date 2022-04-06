@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App" style={{'textAlign':'center'}}>
       <Header/>
       <h3>This is a home page</h3>
       <Outlet/> {/** the component well be nexting will replace and stay here, i.e the outlet represent the nexting child component */}
